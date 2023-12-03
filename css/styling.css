@@ -1,0 +1,119 @@
+/* CSS Reset - Normalize default styles across browsers */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF; /* Link color with high contrast */
+}
+
+/* Header Styles */
+#header-id {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Use Arial as the primary font, fallback to sans-serif */
+    
+    /* Center the header both horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin: 0 auto; /* Center the header horizontally */
+}
+
+#header-id img {
+    margin: auto; /* Center the image */
+    display: block;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.content-class {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+main h2 {
+    color: #007BFF;
+}
+
+main ul {
+    list-style: none;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add more styles as needed */
