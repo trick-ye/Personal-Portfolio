@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Hello! My name is [Your Name], and this is my "About Me" page. 
+            [Provide a brief introduction about yourself.]
+        </p>
+
+        <h2>Education</h2>
+        <p>
+            I studied [Your Field of Study] at [Your University]. 
+            [Include details about your educational background.]
+        </p>
+	 <img src="500x500.jpg" alt="500x500 Image">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <!-- Add more skills as needed -->
+        </ul>
+
+        <h2>Experience</h2>
+        <p>
+            I have [X years] of experience working in [Your Industry]. 
+            [Describe your work experience and any notable projects.]
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            You can reach me via email at: <a href="mailto:your@email.com">your@email.com</a>
+        </p>
+    </section>
+
+</body>
+</html>
