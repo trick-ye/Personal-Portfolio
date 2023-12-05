@@ -11,7 +11,7 @@ htmlwebpage.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Online Portfolio</title>
-    <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
+    <link rel="stylesheet" href="file:///C:/Users/Eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
 
     <!-- Add a custom Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,6 +20,14 @@ htmlwebpage.html
     <style>
         /* Mobile-friendly navigation */
         @media only screen and (max-width: 600px) {
+            .tablet-desktop-specific {
+                display: none;
+            }
+
+            .mobile-specific {
+                display: block;
+            }
+
             nav ul {
                 text-align: center;
             }
@@ -61,14 +69,18 @@ htmlwebpage.html
 </head>
 
 <body>
-    <nav>
+    <nav class="mobile-specific">
         <ul>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header class="mobile-specific">
+        <h1 class="center-image">Eli's Online Portfolio</h1>
+    </header>
+
+    <header class="tablet-desktop-specific">
         <h1 class="center-image">Eli's Online Portfolio</h1>
         <img src="file:///C:/Users/eli/Documents/Eli%20Portfolio%20Code%20base/500x500img.jpg"
             alt="500x500 Image" class="center-image">
@@ -80,14 +92,13 @@ htmlwebpage.html
         <h2>This is my personal portfolio where you will find an array of information on IT-related topics.</h2>
         <p>Here are some of the topics I will be posting about. &#8595 </p>
         <ul>
-            <li>- Personal and Academic Projects</li>
-            <li>- An about me page showcasing work history and education</li>
-            <li>- Showcase for useful tools/tricks I have picked up in the IT space</li>
+            <li class="mobile-specific">- Mobile-specific content</li>
+            <li class="tablet-desktop-specific">- Tablet/Desktop-specific content</li>
         </ul>
 
     </main>
 
-    <footer>
+    <footer class="mobile-specific">
         <p>Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a></p>
     </footer>
 
