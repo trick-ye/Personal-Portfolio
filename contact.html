@@ -4,50 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage Title</title>
+    <title>Eli's Online Portfolio</title>
+    <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
+        /* Mobile-friendly navigation */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                text-align: center;
+            }
+
+            nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
         header {
             text-align: center;
             margin-bottom: 20px;
         }
+
         main {
             max-width: 800px;
             margin: 0 auto;
         }
+
         footer {
             text-align: center;
             padding: 10px;
         }
+
+        /* Center the image on smaller screens */
+        .center-image {
+            text-align: center;
+        }
+
+        /* Adjust main content for smaller screens */
+        .main-content {
+            max-width: 90%; /* Adjust as needed */
+            margin: 0 auto;
+        }
     </style>
-    <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
 </head>
-<nav>
-    <ul>
-        <li><a href="htmlforwebpage.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-    </ul>
-</nav>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="htmlforwebpage.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
 
     <header>
-        <h1>Contact Me</h1>
+        <h1 class="center-image">Contact Me</h1>
     </header>
 
-    <main>
-        <p> To contact me please use the link in the webpage's footer to send an email.</p>
-
-
+    <main class="main-content">
+        <p>To contact me please use the link in the webpage's footer to send an email.</p>
     </main>
 
     <footer>
-        <p> Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a> </p>
+        <p>Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a></p>
     </footer>
-
 </body>
 
 </html>

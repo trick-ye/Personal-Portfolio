@@ -12,8 +12,30 @@ htmlwebpage.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Online Portfolio</title>
     <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
-   
-    
+    <style>
+        /* Add new styles for mobile optimization here */
+        /* Mobile-friendly navigation */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                text-align: center;
+            }
+            nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Center the image on smaller screens */
+        .center-image {
+            text-align: center;
+        }
+
+        /* Adjust main content for smaller screens */
+        .main-content {
+            max-width: 90%; /* Adjust as needed */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,26 +46,23 @@ htmlwebpage.html
         </ul>
     </nav>
     <header>
-        <h1>Eli's Online Portfolio</h1>
-        <img src="file:///C:/Users/eli/Documents/Eli%20Portfolio%20Code%20base/500x500img.jpg" alt="500x500 Image">
+        <h1 class="center-image">Eli's Online Portfolio</h1>
+        <img src="file:///C:/Users/eli/Documents/Eli%20Portfolio%20Code%20base/500x500img.jpg" alt="500x500 Image" class="center-image">
     </header>
 
-    
-
     <!-- This is the Main Content Section, this is where most of our content will go  -->
-    <main>
+    <main class="main-content">
 
-        <h2>This is my personal portfoilio where you will find an array of information on IT related topics.</h2>
+        <h2>This is my personal portfolio where you will find an array of information on IT-related topics.</h2>
         <p>Here are some of the topics I will be posting about. &#8595 </p>
         <ul>
             <li>- Personal and Academic Projects</li>
-	        <li>- An about me page showcasing work history and education</li>
+            <li>- An about me page showcasing work history and education</li>
             <li>- Showcase for useful tools/tricks I have picked up in the IT space</li>
         </ul>
 
-
     </main>
-	
+
     <footer>
         <p> Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a> </p>
     </footer>

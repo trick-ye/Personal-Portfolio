@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,37 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
         header {
             text-align: center;
             margin-bottom: 20px;
         }
+
         section {
             max-width: 600px;
             margin: 0 auto;
         }
-    
+
+        /* Mobile Styles */
+        .intro {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
     <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
     <nav>
@@ -28,6 +51,7 @@
     </nav>
 
 </head>
+
 <body>
 
     <header>
@@ -36,27 +60,25 @@
 
     <section>
         <h2>Introduction</h2>
-        <p>
-            My name is Eli Vincelette, and this is my online portfolio. I'm a student with an Associates in Cyber security and am working on completeing my Bachelor's of Information Technology Systems. I currently work full time for a managed service provider as a Support Engineer.
+        <p class="intro">
+            My name is Eli Vincelette, and this is my online portfolio. I'm a student with an Associates in Cybersecurity and am working on completing my Bachelor's of Information Technology Systems. I currently work full time for a managed service provider as a Support Engineer.
         </p>
 
         <h2>Skills</h2>
-        <ul>
+        <ul class="skills-list">
             <li>HTML, CSS, and JavaScript</li>
             <li>Remote troubleshooting</li>
             <li>365 Administration</li>
             <li>Experience managing Linux and Windows machines</li>
             <li>Active Directory</li>
-            
         </ul>
 
-    
     </section>
 
-    
-     <footer>
-        <p> Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a> </p>
+    <footer class="contact-info">
+        <p>Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a></p>
     </footer>
 
 </body>
+
 </html>
