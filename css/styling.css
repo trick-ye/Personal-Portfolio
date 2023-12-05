@@ -1,4 +1,3 @@
-
 /* CSS Reset Rule: This lets us normalize styling with CSS across browsers */
 
 body,
@@ -35,6 +34,8 @@ a {
     text-decoration: none;
     color: #007BFF; 
 }
+
+/* Mobile styles */
 @media only screen and (max-width: 599px) {
     /* Hide mobile-specific content */
     .mobile-specific {
@@ -71,9 +72,14 @@ a {
     .mobile-tablet-specific {
         display: block;
     }
+
+    .desktop-specific:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover on the desktop */
+    }
+    
 }
 
-
+/* Header styles */
 #header-id {
     background-color: #007BFF;
     color: #fff;
@@ -93,6 +99,7 @@ a {
     display: block;
 }
 
+/* Navigation styles */
 nav {
     background-color: #333;
     color: #fff;
@@ -114,6 +121,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Main content styles */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -136,6 +144,7 @@ main li {
     margin-bottom: 10px;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;

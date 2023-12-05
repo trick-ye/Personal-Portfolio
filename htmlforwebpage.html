@@ -11,7 +11,7 @@ htmlwebpage.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Online Portfolio</title>
-    <link rel="stylesheet" href="file:///C:/Users/Eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
+    <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
 
     <!-- Add a custom Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,14 +20,6 @@ htmlwebpage.html
     <style>
         /* Mobile-friendly navigation */
         @media only screen and (max-width: 600px) {
-            .tablet-desktop-specific {
-                display: none;
-            }
-
-            .mobile-specific {
-                display: block;
-            }
-
             nav ul {
                 text-align: center;
             }
@@ -69,16 +61,12 @@ htmlwebpage.html
 </head>
 
 <body>
-    <nav class="mobile-specific">
+    <nav>
         <ul>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
-
-    <header class="mobile-specific">
-        <h1 class="center-image">Eli's Online Portfolio</h1>
-    </header>
 
     <header class="tablet-desktop-specific">
         <h1 class="center-image">Eli's Online Portfolio</h1>
@@ -93,8 +81,14 @@ htmlwebpage.html
         <p>Here are some of the topics I will be posting about. &#8595 </p>
         <ul>
             <li class="mobile-specific">- Mobile-specific content</li>
-            <li class="tablet-desktop-specific">- Tablet/Desktop-specific content</li>
+            <li class="tablet-specific">- Tablet-specific content</li>
+            <li class="desktop-specific">- Desktop-specific content</li>
+            <li class="mobile-desktop-specific">- Mobile and Desktop-specific content</li>
+            <li class="mobile-tablet-specific">- Mobile and Tablet-specific content</li>
         </ul>
+
+        <!-- Additional content for demonstration -->
+        <p class="desktop-specific">This paragraph has a hover effect on desktop.</p>
 
     </main>
 
