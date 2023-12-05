@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Online Portfolio</title>
     <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
+
+    <!-- Add a custom Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,27 +32,28 @@
         header {
             text-align: center;
             margin-bottom: 20px;
+            /* Apply Google Font to the header */
+            font-family: 'Roboto', sans-serif;
         }
 
-        main {
-            max-width: 800px;
+        .center-image {
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 90%;
             margin: 0 auto;
+        }
+
+        .main-content img {
+            border-radius: 10px; /* Apply rounded corners to the image */
+            max-width: 100%; /* Make sure images don't overflow their container */
         }
 
         footer {
             text-align: center;
             padding: 10px;
-        }
-
-        /* Center the image on smaller screens */
-        .center-image {
-            text-align: center;
-        }
-
-        /* Adjust main content for smaller screens */
-        .main-content {
-            max-width: 90%; /* Adjust as needed */
-            margin: 0 auto;
+            border-radius: 10px; /* Apply rounded corners to the footer */
         }
     </style>
 </head>
@@ -61,7 +67,7 @@
     </nav>
 
     <header>
-        <h1 class="center-image">Contact Me</h1>
+        <h1 class="center-image">Eli's Online Portfolio</h1>
     </header>
 
     <main class="main-content">

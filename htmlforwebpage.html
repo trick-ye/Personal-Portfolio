@@ -12,13 +12,18 @@ htmlwebpage.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Online Portfolio</title>
     <link rel="stylesheet" href="file:///C:/Users/eli/Documents/portfolio%20new/Personal-Portfolio/css/styling.css">
+
+    <!-- Add a custom Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Add new styles for mobile optimization here */
         /* Mobile-friendly navigation */
         @media only screen and (max-width: 600px) {
             nav ul {
                 text-align: center;
             }
+
             nav li {
                 display: block;
                 margin-bottom: 10px;
@@ -35,6 +40,23 @@ htmlwebpage.html
             max-width: 90%; /* Adjust as needed */
             margin: 0 auto;
         }
+
+        /* Apply rounded corners to the image */
+        .center-image img {
+            border-radius: 10px;
+        }
+
+        /* Apply Google Font to the header */
+        header {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Apply rounded corners to the footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -45,9 +67,11 @@ htmlwebpage.html
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
+
     <header>
         <h1 class="center-image">Eli's Online Portfolio</h1>
-        <img src="file:///C:/Users/eli/Documents/Eli%20Portfolio%20Code%20base/500x500img.jpg" alt="500x500 Image" class="center-image">
+        <img src="file:///C:/Users/eli/Documents/Eli%20Portfolio%20Code%20base/500x500img.jpg"
+            alt="500x500 Image" class="center-image">
     </header>
 
     <!-- This is the Main Content Section, this is where most of our content will go  -->
@@ -64,8 +88,9 @@ htmlwebpage.html
     </main>
 
     <footer>
-        <p> Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a> </p>
+        <p>Contact me via email at: <a href="mailto:evincelette@student.cccs.edu">evincelette@student.cccs.edu</a></p>
     </footer>
 
 </body>
+
 </html>
