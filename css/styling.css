@@ -1,5 +1,4 @@
 /* CSS Reset Rule: This lets us normalize styling with CSS across browsers */
-
 body,
 h1,
 h2,
@@ -10,7 +9,10 @@ ol,
 li,
 blockquote,
 figure,
-hr {
+hr,
+article,
+section,
+aside {
     margin: 0;
     padding: 0;
 }
@@ -76,7 +78,6 @@ a {
     .desktop-specific:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover on the desktop */
     }
-    
 }
 
 /* Header styles */
