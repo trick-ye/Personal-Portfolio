@@ -48,6 +48,26 @@ a {
     .tablet-desktop-specific {
         display: block;
     }
+
+    /* Style for table in mobile view */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
 }
 
 /* Tablet styles */
@@ -75,8 +95,29 @@ a {
         display: block;
     }
 
+    /* Style for table in desktop view */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
     .desktop-specific:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover on the desktop */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase box shadow on hover on the desktop */
     }
 }
 

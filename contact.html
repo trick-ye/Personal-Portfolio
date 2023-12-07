@@ -55,6 +55,41 @@
             padding: 10px;
             border-radius: 10px; /* Apply rounded corners to the footer */
         }
+
+        /* Style for the form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -76,6 +111,23 @@
             <figcaption>Always happy to help</figcaption>
         </figure>
         <p>To contact me, please use the link in the webpage's footer to send an email.</p>
+
+        <!-- Form added here -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>
