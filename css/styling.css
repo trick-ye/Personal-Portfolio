@@ -49,24 +49,11 @@ a {
         display: block;
     }
 
-    /* Style for table in mobile view */
-    table {
+    /* Style for the form in mobile view */
+    form input,
+    form textarea,
+    form button {
         width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-
-    table, th, td {
-        border: 1px solid #ddd;
-    }
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #f2f2f2;
     }
 }
 
@@ -80,6 +67,19 @@ a {
     /* Show mobile and desktop-specific content */
     .mobile-desktop-specific {
         display: block;
+    }
+
+    /* Style for the form in tablet view */
+    form input,
+    form textarea,
+    form button {
+        width: calc(50% - 6px);
+        margin-right: 12px;
+    }
+
+    form button {
+        width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -95,29 +95,20 @@ a {
         display: block;
     }
 
-    /* Style for table in desktop view */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
-    }
-
-    table, th, td {
-        border: 1px solid #ddd;
-    }
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #f2f2f2;
-    }
-
     .desktop-specific:hover {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase box shadow on hover on the desktop */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover on the desktop */
+    }
+
+    /* Style for the form in desktop view */
+    form input,
+    form textarea {
+        width: calc(50% - 6px);
+        margin-right: 12px;
+    }
+
+    form button {
+        width: calc(50% - 6px);
+        margin-right: 0;
     }
 }
 
